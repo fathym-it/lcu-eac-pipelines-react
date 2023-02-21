@@ -1,0 +1,8 @@
+{
+  "Package": {
+    "Name": "Build Pipeline for React applications",
+    "Description": "An LCU for installing a build pipeline for React applications.",
+    "Image": "https://www.fathym.com/assets/images/logo.png",
+    "PreviewImage": "https://www.fathym.com/assets/images/logo.png"
+  }
+}
