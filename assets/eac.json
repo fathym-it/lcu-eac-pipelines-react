@@ -6,7 +6,7 @@
           "Name": "React NPM Build/Release",
           "Output": "./build",
           "Type": "NPM",
-          "BuildCommand": "npm run deploy",
+          "DeployCommand": "npm run deploy",
           "InstallCommand": "npm ci",
           "NPMRegistry": "https://registry.npmjs.org/"
         }
