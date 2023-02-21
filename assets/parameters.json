@@ -1,10 +1,6 @@
 {
-  "NPM_PACKAGE": {
+  "RELATIVE_OUTPUT": {
     "type": "input",
-    "message": "Enter the NPM package name:"
-  },
-  "PACKAGE_VERSION": {
-    "type": "input",
-    "message": "Enter the NPM package version to use:"
+    "message": "The output folder in relation to the root of the repository:"
   }
 }
