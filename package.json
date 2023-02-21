@@ -1,6 +1,6 @@
 {
   "name": "@fathym-it/lcu-eac-pipelines-react-npm",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "@fathym-it/lcu-eac-pipelines-react-npm",
   "author": "Fathym, Inc",
   "main": "lcu.json",
