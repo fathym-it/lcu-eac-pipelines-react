@@ -1,1 +1,1 @@
-# lcu-eac-pipelines-react
+# lcu-eac-pipelines-react-npm
