@@ -2,23 +2,23 @@
   "Environments": {
     "$#.PrimaryEnvironment": {
       "Artifacts": {
-        "react-build-release": {
-          "Name": "React Build/Release",
+        "react-npm-build-release": {
+          "Name": "React NPM Build/Release",
           "Output": "{{RELATIVE_OUTPUT}}",
-          "Type": "GitHub",
-          "BuildCommand": "npm run build",
+          "Type": "NPM",
+          "BuildCommand": "npm run deploy",
           "InstallCommand": "npm ci",
           "NPMRegistry": "https://registry.npmjs.org/"
         }
       },
       "DevOpsActions": {
-        "github-artifacts-release-react": {
-          "Name": "GitHub Artifacts - Release - React",
-          "Path": "lcu-github-artifacts-release.yml",
-          "ArtifactLookups": ["react-build-release"],
+        "npm-release-react": {
+          "Name": "NPM Artifacts - Release - React",
+          "Path": "lcu-release.yml",
+          "ArtifactLookups": ["react-npm-build-release"],
           "Templates": [
-            "https://raw.githubusercontent.com/lowcodeunit/infrastructure/master/github/actions/artifacts/_header.hbs.yml",
-            "https://raw.githubusercontent.com/lowcodeunit/infrastructure/master/github/actions/artifacts/release-flow.yml"
+            "https://raw.githubusercontent.com/lowcodeunit/infrastructure/master/github/actions/npm/_header.hbs.yml",
+            "https://raw.githubusercontent.com/lowcodeunit/infrastructure/master/github/actions/npm/release-flow.yml"
           ]
         }
       }
