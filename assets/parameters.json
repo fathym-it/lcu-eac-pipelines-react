@@ -1,2 +1,6 @@
 {
+  "NPM_TOKEN": {
+    "type": "input",
+    "message": "The npm token to use for publishing:"
+  }
 }

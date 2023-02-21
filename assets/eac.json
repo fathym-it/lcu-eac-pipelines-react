@@ -16,12 +16,27 @@
           "Name": "NPM Artifacts - Release - React",
           "Path": "lcu-release.yml",
           "ArtifactLookups": ["react-npm-build-release"],
+          "SecretLookups": ["npm-access-token"],
           "Templates": [
             "https://raw.githubusercontent.com/lowcodeunit/infrastructure/master/github/actions/npm/_header.hbs.yml",
             "https://raw.githubusercontent.com/lowcodeunit/infrastructure/master/github/actions/npm/release-flow.yml"
           ]
         }
+      },
+      "Secrets": {
+        "npm-access-token": {
+          "Name": "NPM Access Token",
+          "DataTokenLookup": "npm-access-token",
+          "KnownAs": "NPM_TOKEN"
+        }
       }
+    }
+  },
+  "DataTokens": {
+    "npm-access-token": {
+      "Name": "NPM Access Token",
+      "Description": "NPM Access Token",
+      "Value": "{{NPM_TOKEN}}"
     }
   }
 }
