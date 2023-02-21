@@ -4,7 +4,7 @@
       "Artifacts": {
         "react-npm-build-release": {
           "Name": "React NPM Build/Release",
-          "Output": "{{RELATIVE_OUTPUT}}",
+          "Output": "./build",
           "Type": "NPM",
           "BuildCommand": "npm run deploy",
           "InstallCommand": "npm ci",

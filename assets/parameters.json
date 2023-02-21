@@ -1,6 +1,2 @@
 {
-  "RELATIVE_OUTPUT": {
-    "type": "input",
-    "message": "The output folder in relation to the root of the repository:"
-  }
 }
